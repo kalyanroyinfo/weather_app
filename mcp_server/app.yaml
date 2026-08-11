@@ -1,0 +1,14 @@
+command:
+  - "python"
+  - "weather_mcp_server.py"
+
+resources:
+  - name: requirements
+    source:
+      path: ./requirements.txt
+
+env:
+  - name: WEATHER_SECRET_SCOPE
+    value: "weather"
+  - name: WEATHER_API_KEY_SECRET_KEY
+    value: "weatherapi-key"

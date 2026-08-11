@@ -1,0 +1,9 @@
+resources:
+  apps:
+    weather_mcp_app:
+      name: "mcp-weather-server"
+      description: "Weather forecast MCP server (FastMCP) - current conditions, forecast, and travel recommendation tools"
+      source_code_path: ../mcp_server
+      permissions:
+        - level: CAN_USE
+          group_name: users
