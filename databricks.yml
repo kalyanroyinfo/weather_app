@@ -1,0 +1,19 @@
+# This is a Databricks asset bundle definition for weather_app.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+bundle:
+  name: weather_app
+  uuid: 5d89f957-c79c-4a5b-a50a-fc9036a952c4
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    # The default target uses 'mode: development' to create a development copy.
+    # - Deployed resources get prefixed with '[dev my_user_name]'
+    # - Any job schedules and triggers are paused by default.
+    # See also https://docs.databricks.com/dev-tools/bundles/deployment-modes.html.
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-6f08b0eb-a11d.cloud.databricks.com
